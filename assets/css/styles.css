@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: Sen, sans-serif;
+  --primary: #ffb900;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Active */
+
+/* Common */
+.main-content {
+  width: 1170px;
+  /* min-width: calc(100% - 48px); */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 9999px;
+  background: #171100;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Header */
+.header {
+  background-color: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.header .nav {
+  margin-left: auto;
+}
+
+.header .nav ul {
+  display: flex;
+}
+
+.header .nav ul a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.header .nav li a:hover,
+.header .nav li.active a {
+  color: #171100;
+  font-size: 1.6rem;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header .nav li.active a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+
+.header .sign-up-btn {
+  min-width: 144px;
+  margin-left: 49px;
+}
+
+/* Hero */
+
+.hero {
+  padding-top: 56px;
+  background-color: #fffcf4;
+  height: calc(100vh - 94px);
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .body .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .body .content-block {
+  padding: 64px 0 0 130px;
+  width: 52%;
+}
+
+.hero .body .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .body .media-block .hero-summary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+
+  width: 270px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 24px;
+
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .body .media-block .hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .body .media-block .hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+.hero .body .media-block .hero-summary .item .label {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 30px; /* 166.667% */
+}
+
+.hero .body .media-block .hero-summary .item .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+
+.hero .body .media-block .hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero .content-block .heading {
+  color: #171100;
+
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+
+.hero .content-block .desc:first-of-type {
+  margin: 22px 0;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 30px; /* 166.667% */
+}
+
+.hero .content-block .cta-group {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 48px;
+}
+
+.hero .content-block .hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  height: 64px;
+  background-color: var(--primary);
+}
+
+.hero .watch-video {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 28px;
+  cursor: pointer;
+  background-color: #fffcf4;
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 40px;
+  /* background: #fff; */
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+
+  margin-left: 14px;
+}
+
+.hero .stats {
+  margin-top: 8px;
+}
+
+.hero .stats strong {
+  color: #171100;
+
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  padding: 0 8px 0 28px;
+}
+
+.hero .stats strong:first-of-type {
+  padding-left: 0;
+}
+
+/* Popular */
